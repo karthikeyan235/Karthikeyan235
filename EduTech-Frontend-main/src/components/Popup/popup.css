@@ -1,0 +1,140 @@
+/* Overlay to cover the screen with a fade-in effect */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeInOverlay 0.5s forwards; /* Fade-in animation for the overlay */
+  }
+  
+  /* Popup container with flexbox layout */
+  .popup {
+    background-color: white;
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInPopup 0.5s 0.2s forwards;
+  }
+  
+  /* Flexbox layout for content */
+  .popup-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  /* Image styling */
+  .popup-image {
+    max-width: 280px;
+    height: 20rem;
+    margin-right: -50px;
+    margin-left: -4rem;
+  }
+  
+  /* Styling for text content on the right */
+  .popup-text {
+    flex-grow: 1;
+  }
+
+  .popup-text p {
+    overflow-y: scroll;
+    line-height: 23px;
+  }
+
+  .popup-text h2 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+  /* Required star */
+.required-star {
+    color: red;
+    margin-left: 5px;
+  }
+  
+  /* Animation for overlay */
+  @keyframes fadeInOverlay {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-in animation for popup */
+  @keyframes slideInPopup {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Footer with checkbox and button */
+  .popup-footer {
+    margin-top: 20px;
+  }
+  
+  /* Label for checkbox */
+  .label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Style the checkbox */
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Email input */
+  .email-input {
+    width: 77%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Submit button with transition effect */
+  .submit-btn {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Add some shadow and styling on hover */
+  .popup {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .popup:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  

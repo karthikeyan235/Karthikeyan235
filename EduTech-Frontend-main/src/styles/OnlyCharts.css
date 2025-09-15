@@ -1,0 +1,9 @@
+.chart-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+.chart-container.visible {
+    opacity: 1;
+}
+  

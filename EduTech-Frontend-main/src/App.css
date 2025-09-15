@@ -1,0 +1,693 @@
+* {
+    font-family: "Poppins", sans-serif !important;
+    scroll-behavior: smooth;
+    transition-duration: 200ms;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.search > input {
+    outline: none !important;
+    border: none !important;
+}
+
+#contactFormInput > textarea, input{
+    outline: none;
+    border-bottom: 2px solid transparent;
+}
+
+#contactFormInput > textarea:focus, input:focus{
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+.linear-color {
+    background: -webkit-linear-gradient(0deg, #B07EE3, #2E5BFF 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linear-color-2 {
+    background: linear-gradient(130deg, #B07EE3, #FFFFFF 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linear-bg {
+    background: #CFE9FF;
+}
+
+.bg-lang {
+    background: #F5F5F5;
+}
+
+.bg-customBlue{
+    background-color: #2E5BFF;
+}
+
+.bg-customBlueLight{
+    background-color: #94ABFF;
+}
+
+.bg-dash{
+    background: #D0CFCE45;
+}
+
+.bg-customBlueShadow {
+    background-color: #2E5BFF;
+    box-shadow: 0px 4px 15px 0px #3156C08F;
+}
+
+.custom-gradientBG {
+    background: linear-gradient(130deg, #B07EE3 0%, #2E5BFF 100%);
+}
+
+.custom-gradienttext {
+    background: linear-gradient(90deg, #B07EE3 0%, #2E5BFF 100%);
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-SideCountcolor{
+    background-color: #D9D9D978;
+}
+
+.bg-customHover:hover{
+    background-color: #1a4bff;
+}
+
+.text-customBlue{
+    color:#2E5BFF !important;
+}
+
+.bg-dashboard2 {
+    background: #fff;
+}
+
+.proctoring-bgCustom{
+    background-color: #F5F7FF;
+}
+
+.text-bg {
+    filter: invert(1) grayscale(1) contrast(9);
+}
+
+.hovershow {
+    opacity: 0.5;
+}
+
+.hovershow:hover {
+    opacity: 1;
+}
+
+.adaptive {
+    background: #D9D9D945;
+    backdrop-filter: blur(40px)
+}
+
+.faq-shadow {
+    box-shadow: 0px 4px 15px 0px #00000040;
+    backdrop-filter: blur(40px)
+}
+
+.cust-shadow {
+    box-shadow: 0px 4px 20px 0px #00000020;
+    backdrop-filter: blur(40px)
+}
+
+.custom-button {
+    background-color: #2E5BFF;
+    color: white;
+    box-shadow: 0px 4px 15px 0px #3156C08F;
+    border: 0.5px solid #ffffffcc;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 20px;
+}
+
+.custom-button-white {
+    background-color: white;
+    color: #2E5BFF;
+    box-shadow: 0px 4px 15px 0px #3156C08F;
+    border: 2px solid #2E5BFF;
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+}
+
+.custom-button:active {
+    transform: scale(0.9);
+}
+
+.custom-button-white:hover {
+    transform: scale(1.05);
+}
+
+.custom-button-white:active {
+    transform: scale(0.9);
+}
+
+.border-customBlue{
+    border-color:#2E5BFF;
+}
+
+.bg-color-blue {
+    background-color: #366EC4;
+}
+
+#nav-menu::after {
+    display: none;
+}
+
+#createQuiz > .modal-content {
+    border: 2px solid #2E5BFF;
+}
+
+.modal-content {
+    border-radius: 30px !important;
+    background-color: #EDEDED !important;
+    box-shadow: 0px 4px 15px 0px #00000040;
+    backdrop-filter: blur(40px)
+}
+
+#template > .modal-content {
+    border-radius: 30px !important;
+    background-color: #D9D9D945 !important;
+    border: 3px solid #94ABFF2E !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.nav-butt.active {
+    background-color: #366EC4;
+    color: white;
+}
+
+.hnav-butt:hover {
+    background-color: #366EC4;
+    box-shadow: 0px 10px 16px -6px rgba(143,143,143,1);
+    color: white;
+    transform: scale(1.08);
+}
+
+.custom-btn {
+    background-color: #366EC4;
+    box-shadow: 0px 10px 16px -6px rgba(143,143,143,1);
+    color: white;
+}
+
+.custom-btn:hover {
+    transform: scale(1.08);
+}
+
+.custom-btn:active {
+    transform: scale(1);
+}
+
+.hnav-butt:active {
+    transform: scale(1);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#sidepanel::-webkit-scrollbar {
+    width: 0;
+}
+
+[data-tooltip]:hover::after {
+    display: flex;
+    position: absolute;
+    content: attr(data-tooltip);
+    background: #333;
+    font-size: 14px;
+    top: 60px;
+    right: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user:hover .bttt {
+    display: flex;
+}
+
+.user:hover .exp {
+    display: none;
+}
+
+.loading {
+    animation: loading 1s infinite alternate-reverse;
+}
+
+@keyframes loading {
+    from {
+        filter: brightness(.5);
+    }
+    to {
+        filter: brightness(.8);
+    }
+}
+
+#remoteVideo > video {
+    object-fit: cover !important;
+    object-position: center;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 4px solid #2E5BFF;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    #mainboard::-webkit-scrollbar {
+        display: none;
+    }
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.premium {
+    position: relative; /* Ensures the ::after is positioned relative to this element */
+}
+
+.premium::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('/Premium.png');
+    background-size: cover; /* Ensures the image fits perfectly */
+    background-repeat: no-repeat;
+}
+
+.premium-small {
+    position: relative; /* Ensures the ::after is positioned relative to this element */
+}
+
+.premium-small::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-image: url('/Premium.png');
+    background-size: cover; /* Ensures the image fits perfectly */
+    background-repeat: no-repeat;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    pointer-events: auto !important;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.custom-drop > .dropdown-menu {
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.custom-drop > a.dropdown-toggle.nav-link::after {
+    display: none;
+}
+
+.custom-drop:hover {
+    background-color: black !important;
+    color: white;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b3b3b3;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.book {
+    filter: brightness(1);
+}
+
+.menu {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.add-book {
+    transform: translate(-50%, -50%);
+}
+
+.card-book:hover {
+    transform: scale(1.05);
+}
+
+.card-book:active {
+    transform: scale(0.9);
+}
+
+.card-book:hover .book {
+    filter: brightness(0.5);
+}
+
+.card-book:hover .menu {
+    opacity: 1;
+}
+
+.transparent-effect {
+    opacity: 0.5;
+}
+
+.transparent-effect:hover {
+    opacity: 1;
+}
+
+.accordion-button::after {
+    position: absolute;
+    right: 20px;
+    mix-blend-mode: multiply;
+}
+
+.accordion-item {
+    padding: 2px 0 !important;
+    border: 0 !important;
+}
+ 
+.accordion-button {
+    background-color: #2E5BFF !important;
+    border-radius: 15px !important;
+    padding: 5px 20px !important;
+    box-shadow: none !important;
+}
+
+.studentLogin {
+    background-image: url("/LoginPage/StudentLogin.jpg");
+}
+
+.active-bg {
+    background-image: url('/NavWhite.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.drop-black {
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.drop-blue {
+    filter: drop-shadow(0 0 0.75rem blue);
+}
+
+.studentLogin {
+    background-image: url("/LoginPage/StudentLogin.jpg");
+    background-position: bottom calc(20%);
+}
+
+.teacherLogin {
+    background-image: url("/LoginPage/TeacherLogin.jpg");
+    background-position: center calc(80%) !important;
+}
+
+.adminLogin {
+    background-image: url("/LoginPage/AdminLogin.jpg");
+    background-position: center calc(10%);
+}
+
+.spinner {
+    border: 4px solid white;
+    border-top: 4px solid rgb(104, 104, 104);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    animation: spin 1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mute:hover {
+    background-color: rgb(253, 68, 68) !important;
+    color: white;
+    transform: scale(1.1);
+    border: 1px solid white;
+}  
+
+.mute:active {
+    transform: scale(0.9);
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.preloader-text {
+    position: relative;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("/Preloader.jpg"); /* Make sure this path is correct */
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.moving-text {
+    display: inline-block;
+    animation: preloader 3s infinite;
+}
+
+.fadeinround {
+    animation: fadeinround 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fadeout {
+    animation: fadeout 1s forwards;
+}
+
+.fadeintop {
+    animation: fadeintop 500ms forwards;
+}
+
+.fadeintoplogin {
+    animation: fadeintoplogin 2s forwards;
+}
+
+.fadeinbottomround {
+    animation: fadeinbottomround 2s forwards;
+}
+
+.fadeinbottom {
+    animation: fadeinbottom 800ms forwards ease-in-out;
+}
+
+.fadeoutbottom {
+    animation: fadeoutbottom 500ms forwards ease-in-out;
+}
+
+.fadeinout {
+    animation: fadeinout 2s infinite ease-in-out;
+}
+
+.up {
+    animation: up 1s forwards ease-in-out;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* background-size: 150%;
+animation: moveBackground 1s alternate infinite; */
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeinround {
+    from {
+        opacity: 0;
+        border-radius: 100%;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        border-radius: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeinbottomround {
+    from {
+        opacity: 0;
+        transform: translateY(400px);
+        border-radius: 50%;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        border-radius: 0;
+    }
+}
+
+@keyframes fadeinbottom {
+    from {
+        opacity: 0;
+        transform: translateY(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeoutbottom {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(1000px);
+    }
+}
+
+@keyframes fadeintop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeintoplogin {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes preloader {
+    0% {
+        padding-top: 0;
+    }
+    60% {
+        padding-top: 65vh;
+    }
+    100% {
+        padding-top: 0;
+    }
+}
+
+.strikethrough {
+	display: inline-block;
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+
+.strikethrough:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 3px;
+	box-shadow: 0 1px rgba(255,255,255,0.6);
+	margin-top: -0.7em;
+	background: black;
+	transform-origin: center left;
+	animation: strikethrough 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+
+@keyframes strikethrough {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
